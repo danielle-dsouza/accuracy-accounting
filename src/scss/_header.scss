@@ -1,0 +1,136 @@
+.navbar {
+    padding: 0;
+    background: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+  
+    .container-fluid {
+      width: 100%;
+      padding: 0 20px;
+  
+      button {
+        border-width: 1px;
+        border-color: rgb(231, 227, 227);
+        margin: 5px 0;
+  
+        span {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(231, 227, 227, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+      }
+  
+      div {
+        .navbar-brand {
+          font-family: "Staatliches";
+          color: white;
+        }
+  
+        input[type="text"] {
+          border: none;
+          padding: 6px;
+        }
+  
+        ul > li {
+          font-family: "PT Sans";
+          letter-spacing: 1px;
+  
+          a {
+            color: rgb(231, 227, 227);
+          }
+  
+          a:hover {
+            background-color: $bg-gray;
+            color: white;
+          }
+        }
+  
+        // Search Bar
+        .searchbox {
+          margin: 10px;
+          height: auto;
+          border-radius: 20px;
+          padding: 10px;
+  
+          input {
+            color: black;
+            border: 0;
+            outline: 0;
+            background: none;
+            transition: 0.3s linear;
+          }
+        }
+      }
+  
+      @media screen and (max-width: 320px) {
+        // NTS: Mobile
+        .navbar-brand {
+          font-size: 3vw;
+  
+          input[type="text"] {
+            font-size: 1.6vw;
+            margin: auto 0;
+          }
+  
+          ul > li {
+            font-size: 1.6vw;
+          }
+        }
+  
+        // .searchbox { //FIXME: Issue with search bar in drop-down menu.
+        //   width: 50px;
+  
+        //   input {
+        //     width: 100%;
+        //   }
+        // }
+  
+        .search-white {
+          input {
+            width: 95%;
+          }
+        }
+      }
+  
+      @media screen and (min-width: 768px) {
+        //NTS: Tablet +
+        .navbar-brand {
+          font-size: 2vw;
+  
+          input[type="text"] {
+            font-size: 1.3vw;
+            margin: auto 10px; //FIXME: space between search bar and 'Contact'
+          }
+  
+          ul > li {
+            font-size: 1.3vw;
+          }
+        }
+  
+        .search-white {
+          input {
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+  
+  // JS add/remove Class
+  .search-dark {
+    background-color: #363548;
+    input {
+      width: 0;
+    }
+    .fa-search-icon {
+      color: white;
+    }
+  }
+  
+  .search-white {
+    background-color: white;
+    // input {
+    //   width: 200px;
+    // }
+    .fa-search-icon {
+      color: black;
+    }
+  }
+  
