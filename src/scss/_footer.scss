@@ -1,0 +1,22 @@
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: $bg-dark;
+    padding-bottom: 2%;
+  
+    .fa-icon {
+      margin: 2% 2%;
+      color: white;
+  
+      &:hover {
+        color: rgb(195, 182, 182);
+      }
+    }
+  
+    p {
+      font-family: "PT Sans", sans-serif;
+      font-size: 15px;
+      color: white;
+    }
+  }
+  
