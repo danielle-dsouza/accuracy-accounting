@@ -1,0 +1,25 @@
+@import "../../scss/globals";
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: $bg-dark;
+    padding-bottom: 2%;
+  
+    .fa-icon {
+      margin: 2% 2%;
+      color: white;
+  
+      &:hover {
+        // color: rgb(195, 182, 182);
+        color: lighten($highlight-color, 20%);
+      }
+    }
+  
+    p {
+      font-family: "Open Sans Condensed", sans-serif;
+      font-size: 15px;
+      color: white;
+    }
+  }
+  
