@@ -1,0 +1,8 @@
+#staff {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 1vw;
+    grid-auto-flow: row;
+    padding: 3% 8%;
+}
