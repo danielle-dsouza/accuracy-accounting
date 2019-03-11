@@ -11,8 +11,8 @@
       color: white;
   
       &:hover {
-        // color: rgb(195, 182, 182);
-        color: lighten($highlight-color, 20%);
+        color: rgb(195, 182, 182);
+        // color: lighten($highlight-color, 20%);
       }
     }
   
