@@ -1,34 +1,90 @@
 #person {
-  padding: 4% 5%;
-  background-color: rgb(223, 223, 223);
-  display: grid;
-  grid-gap: 1%;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 5%;
-  grid-auto-flow: column;
-
-  text-align: left;
+  padding: 4% 5% 0 5%;
+  text-align: center;
 
   div > img {
-    width: 100%;
-    align-self: center;
+    width: 40%;
     border-radius: 50%;
     object-fit: contain;
+    padding-bottom: 2%;
+  }
+
+  h4 {
+    font-family: "Fjalla One";
+    font-size: 6vw;
+  }
+  
+  h5 {
+    font-family: "Source Sans Pro";
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  
+  p {
+    font-family: "Source Sans Pro";
+    font-size: 4vw;
   }
 }
 
-h4 {
-  font-family: "Fjalla One";
-  font-size: 1.3vw;
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  #person {
+    padding: 4% 5%;
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 5%;
+    grid-auto-flow: column;
+  
+    text-align: left;
+  
+    div > img { //FIXME: Vertically align image
+      width: 100%;
+      align-self: center;
+      object-fit: contain;
+    }
+  
+    h4 {
+      font-size: 2vw;
+    }
+    
+    h5 {
+      font-size: 2vw;
+    }
+    
+    p {
+      font-size: 2vw;
+    }
+  }
 }
 
-h5 {
-  font-family: "Source Sans Pro";
-  font-size: 1.3vw;
-  font-weight: bold;
-}
-
-p {
-  font-family: "Source Sans Pro";
-  font-size: 1.1vw;
+@media only screen and (min-width: 1025px) {
+  #person {
+    padding: 4% 5%;
+    background-color: rgb(223, 223, 223);
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 5%;
+    grid-auto-flow: column;
+  
+    text-align: left;
+  
+    div > img {
+      width: 100%;
+      align-self: center;
+      object-fit: contain;
+    }
+  
+    h4 {
+      font-size: 1.3vw;
+    }
+    
+    h5 {
+      font-size: 1.3vw;
+    }
+    
+    p {
+      font-size: 1.1vw;
+    }
+  }
 }
