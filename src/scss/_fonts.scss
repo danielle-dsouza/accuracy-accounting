@@ -1,0 +1,41 @@
+.title {
+  font-family: "Fjalla One";
+  font-size: 3vw;
+  padding: 5% 0;
+  color: white;
+  a {
+    text-decoration: none;
+
+    div {
+      text-align: center;
+      margin: 5% 45% 0;
+    }
+  }
+}
+
+.subtitle-black {
+  font-family: "Fjalla One";
+  font-size: 2em;
+  color: black;
+}
+
+.btn-custom {
+  //FIXME: Button padding/margin
+  font-size: 1.5vw;
+  font-family: "Source Sans Pro";
+  font-weight: bold;
+
+  &.btn-custom-blue {
+    color: lighten($bg-dark, 10%);
+    background-color: $highlight-color;
+    border: 3px solid lighten($highlight-color, 10%);
+  }
+
+  .highlight {
+    color: $highlight-color;
+  }
+
+  &:hover {
+    filter: brightness(150%);
+  }
+}
