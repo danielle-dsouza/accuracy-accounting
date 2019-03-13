@@ -18,6 +18,7 @@ import { ServiceDetailComponent } from './service-page/service-detail/service-de
 import { ServiceListComponent } from './service-page/service-list/service-list.component';
 import { ServiceItemComponent } from './service-page/service-list/service-item/service-item.component';
 import { ServiceInfoComponent } from './service-page/service-info/service-info.component';
+import { WildPageComponent } from './wild-page/wild-page.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ServiceInfoComponent } from './service-page/service-info/service-info.c
     ServiceDetailComponent,
     ServiceListComponent,
     ServiceItemComponent,
-    ServiceInfoComponent
+    ServiceInfoComponent,
+    WildPageComponent
   ],
   imports: [
     BrowserModule,
