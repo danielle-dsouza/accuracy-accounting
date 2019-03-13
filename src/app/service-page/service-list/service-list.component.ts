@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Service } from "../service.model";
+import { ServicesService } from '../services.service';
 
 @Component({
   selector: 'app-service-list',
@@ -7,17 +8,13 @@ import { Service } from "../service.model";
   styleUrls: ['./service-list.component.scss']
 })
 export class ServiceListComponent implements OnInit {
+  services: Service[];
 
-  services: Service[] = [
-    new Service("Bookkeeping"),
-    new Service("Tax Managment"),
-    new Service("Test Service"),
-    new Service("Test Service")
-  ];
-
-  constructor() { }
+  constructor(private serviceService: ServicesService) { 
+  }
 
   ngOnInit() {
+    this.services = this.serviceService.getServices();
   }
 
 }
