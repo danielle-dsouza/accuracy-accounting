@@ -17,6 +17,7 @@ import { PeopleListComponent } from './about-page/people/people-list/people-list
 import { ServiceDetailComponent } from './service-page/service-detail/service-detail.component';
 import { ServiceListComponent } from './service-page/service-list/service-list.component';
 import { ServiceItemComponent } from './service-page/service-list/service-item/service-item.component';
+import { ServiceInfoComponent } from './service-page/service-info/service-info.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ServiceItemComponent } from './service-page/service-list/service-item/s
     PeopleListComponent,
     ServiceDetailComponent,
     ServiceListComponent,
-    ServiceItemComponent
+    ServiceItemComponent,
+    ServiceInfoComponent
   ],
   imports: [
     BrowserModule,
