@@ -1,0 +1,6 @@
+@import "../../../scss/globals";
+
+hr {
+    border-width: 5px;
+    border-color: $highlight-color;
+}

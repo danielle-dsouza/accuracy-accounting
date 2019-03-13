@@ -4,6 +4,14 @@
 
 div {
     .title {
-        background-image: url("../../assets/images/sunrise-city.jpg");
+        background-image: url("../../assets/images/sunrise-city.jpg"); //TODO: Change img
     }
+}
+
+.serve-layout {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 1vw;
+    grid-auto-flow: row;
+    padding: 3% 8%;
 }
