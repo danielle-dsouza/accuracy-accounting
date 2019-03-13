@@ -6,10 +6,10 @@ export class ServicesService {
     serviceSelected = new EventEmitter<Service>();
 
   private services: Service[] = [
-    new Service("Bookkeeping"),
-    new Service("Tax Managment"),
-    new Service("Test Service"),
-    new Service("Test Service"),
+    new Service("Bookkeeping", "Insert bookkeeping description."),
+    new Service("Tax Managment", "Insert tax management description."),
+    new Service("Test Service", "Insert test description."),
+    new Service("Test Service", "Insert test description."),
   ];
 
   getServices() {
