@@ -1,0 +1,65 @@
+@import "./globals";
+
+.btn-custom {
+  //FIXME: Button padding/margin
+  font-family: "Source Sans Pro";
+  font-weight: bold;
+  font-size: 3vw;
+
+  &.btn-custom-blue {
+    color: lighten($bg-dark, 10%);
+    background-color: $highlight-color;
+    border: 3px solid lighten($highlight-color, 10%);
+  }
+
+  &:hover {
+    filter: brightness(150%);
+  }
+}
+
+.btn-gray {
+  text-decoration: none; // remove if commented code below is added
+  font-family: "Fjalla One";
+  font-size: 1vw;
+  color: black;
+  margin: 5% 2%;
+
+  &.list-group-item {
+    padding-bottom: 0; //FIXME: Extra padding-bottom?
+    border-width: 2px;
+    border-color: rgb(214, 214, 214);
+  }
+
+  &:hover {
+    background-color: rgb(216, 216, 216);
+  }
+}
+
+// Add separately
+//   a {
+//       text-decoration: none;
+//   }
+
+@media only screen and (min-width: 641px) and (max-width: 1050px) {
+  .title {
+    font-size: 5vw;
+    padding: 9% 0 3% 0;
+
+    .btn-custom {
+      margin: 4% 42% 0;
+      font-size: 3vw;
+    }
+  }
+}
+
+@media only screen and (min-width: 1051px) {
+  .title {
+    font-size: 3vw;
+    padding: 6% 0 3% 0;
+
+    .btn-custom {
+      margin: 3% 42% 0 !important; //FIXME: Remove important
+      font-size: 1.5vw;
+    }
+  }
+}

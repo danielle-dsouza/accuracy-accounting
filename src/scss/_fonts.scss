@@ -21,53 +21,6 @@
   font-size: 2em;
 }
 
-.btn-custom {
-  //FIXME: Button padding/margin
-  font-family: "Source Sans Pro";
-  font-weight: bold;
-  font-size: 3.5vw;
-
-  &.btn-custom-blue {
-    color: lighten($bg-dark, 10%);
-    background-color: $highlight-color;
-    border: 3px solid lighten($highlight-color, 10%);
-  }
-
-  &:hover {
-    filter: brightness(150%);
-  }
-}
-
 .highlight {
   color: $highlight-color;
-}
-
-@media only screen and (min-width: 641px) and (max-width: 1024px) {
-  .title {
-    font-size: 3vw;
-    padding: 8% 0 3% 0;
-
-    a > div {
-      margin: 4% 42% 0;
-    }
-  }
-
-  .btn-custom {
-    font-size: 2vw;
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  .title {
-    font-size: 3vw;
-    padding: 5% 0;
-
-    a > div {
-      margin: 3% 45% 0;
-    }
-  }
-
-  .btn-custom {
-    font-size: 1.5vw;
-  }
 }

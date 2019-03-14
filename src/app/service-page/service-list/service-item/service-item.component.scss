@@ -1,17 +1,1 @@
-a {
-  text-decoration: none;
-  font-family: "Fjalla One";
-  font-size: 1vw;
-  color: black;
-  margin: 5% 2%;
-
-  &.list-group-item {
-    padding-bottom: 0; //FIXME: Extra padding-bottom?
-    border-width: 2px;
-    border-color: rgb(214, 214, 214);
-  }
-
-  &:hover {
-    background-color: rgb(216, 216, 216);
-  }
-}
+@import "../../../../scss/buttons";

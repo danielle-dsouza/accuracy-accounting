@@ -1,17 +1,18 @@
 @import "../../scss/globals";
 @import "../../scss/parallax";
 @import "../../scss/fonts";
+@import "../../scss/buttons";
 
 div {
-    .title {
-        background-image: url("../../assets/images/space-room.jpg"); //TODO: Change img
-    }
+  .title {
+    background-image: url("../../assets/images/space-room.jpg"); //TODO: Change img
+  }
 }
 
 .serve-layout {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-gap: 1vw;
-    grid-auto-flow: row;
-    padding: 3% 8%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 1vw;
+  grid-auto-flow: row;
+  padding: 3% 8%;
 }
