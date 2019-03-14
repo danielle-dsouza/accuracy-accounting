@@ -1,5 +1,6 @@
 @import "../../scss/globals";
 @import "../../scss/fonts";
+@import "../../scss/buttons";
 
 div {
   .title {
@@ -12,6 +13,39 @@ div {
 
   .wild-layout {
     padding: 3% 8%;
+
+    div:nth-child(1) {
+      p {
+        font-family: "Prompt";
+        font-size: 4.5vw;
+        
+        .home-link {
+          color: $highlight-color;
+  
+          &:hover {
+            color: darken($highlight-color, 10%);
+          }
+        }
+      }
+
+      p:nth-child(2) {
+        font-size: 3vw;
+      }
+    }
+  }
+
+  div:nth-child(2) {
+    height: auto;
+  }
+
+  hr {
+    border-width: 5px;
+    border-color: $highlight-color;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  div > .wild-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1vw;
@@ -19,47 +53,12 @@ div {
 
     div:nth-child(1) {
       p {
-        font-family: "Prompt";
         font-size: 2vw;
       }
 
       p:nth-child(2) {
         font-size: 1.5vw;
       }
-
-      a {
-        color: $highlight-color;
-
-        &:hover {
-          color: darken($highlight-color, 10%);
-        }
-      }
     }
-  }
-
-  div:nth-child(2) {
-    height: auto;
-
-    div > a {
-      font-family: "Fjalla One";
-      font-size: 1vw;
-      color: black;
-      margin: 5% 2%;
-
-      &.list-group-item {
-        padding-bottom: 0; //FIXME: Extra padding-bottom?
-        border-width: 2px;
-        border-color: rgb(214, 214, 214);
-      }
-
-      &:hover {
-        background-color: rgb(216, 216, 216);
-      }
-    }
-  }
-
-  hr {
-    border-width: 5px;
-    border-color: $highlight-color;
   }
 }
