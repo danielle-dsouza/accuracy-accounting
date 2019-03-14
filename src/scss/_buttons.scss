@@ -1,6 +1,7 @@
 @import "./globals";
 
 .btn-custom {
+  cursor: pointer;
   //FIXME: Button padding/margin
   font-family: "Source Sans Pro";
   font-weight: bold;
@@ -18,6 +19,7 @@
 }
 
 .btn-gray {
+  cursor: pointer;
   text-decoration: none; // remove if commented code below is added
   font-family: "Fjalla One";
   font-size: 1vw;
