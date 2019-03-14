@@ -2,8 +2,33 @@
   <div class="title text-center">
     404 Error
   </div>
-</div>
 
-<div>
-  <h4>Test</h4>
+  <div class="wild-layout">
+    <div>
+      <p>Sorry, the page you are looking for has mysteriously dissapeared.</p>
+      <p>(Don't worry, we're firing our development team as we speak.)</p>
+      <p>
+        In the meantime, here are some helpful links, or return to the
+        <a [routerLink]="['/']">homepage</a>!
+      </p>
+    </div>
+
+    <div >
+      <hr>
+      <div>
+        <a class="list-group-item" [routerLink]="['/services']">
+          <h4>Services</h4>
+        </a>
+
+        <a class="list-group-item" [routerLink]="['/']">
+          <h4>Pricing</h4>
+        </a>
+
+        <a class="list-group-item" [routerLink]="['/']">
+          <h4>Free Consultation</h4>
+        </a>
+      </div>
+    </div>
+
+  </div>
 </div>
