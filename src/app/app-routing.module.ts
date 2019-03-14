@@ -6,10 +6,15 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { ServicePageComponent } from './service-page/service-page.component';
 import { WildPageComponent } from './wild-page/wild-page.component';
+import { ServiceInfoComponent } from './service-page/service-info/service-info.component';
+import { ServiceDetailComponent } from './service-page/service-detail/service-detail.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
-  { path: 'services', component: ServicePageComponent },
+  { path: 'services', component: ServicePageComponent, children: [
+    { path: '', component: ServiceInfoComponent },
+    { path: ':id', component: ServiceDetailComponent }
+  ] },
   { path: 'about', component: AboutPageComponent },
   { path: 'contact', component: ContactPageComponent },
   { path: 'not-found', component: WildPageComponent },
