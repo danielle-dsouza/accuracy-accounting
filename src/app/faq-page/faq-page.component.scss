@@ -1,0 +1,19 @@
+@import "../../scss/globals";
+@import "../../scss/fonts";
+@import "../../scss/buttons";
+
+div {
+  .title {
+    background-image: url("../../assets/images/space-room.jpg");
+  }
+}
+
+.faq-layout {
+  margin: 4% 10% 0 10%;
+}
+
+@media only screen and (min-width: 641px) {
+  .faq-layout {
+    margin: 2% 8% 0 8%;
+  }
+}

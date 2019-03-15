@@ -1,0 +1,43 @@
+@import "../../../../scss/fonts";
+
+div {
+  padding: 0 0 2% 0;
+
+  div {
+    font-family: "Prompt";
+    padding: 0 2%;
+    span {
+      font-family: "Fjalla One";
+      font-weight: bold;
+    }
+  }
+
+  div:nth-child(1) {
+    cursor: pointer;
+    background-color: rgb(216, 216, 216);
+    font-size: 4vw;
+    color: black;
+  }
+
+  div:nth-child(2) {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  div {
+    margin: 0;
+
+    div {
+      padding: 0 2%;
+    }
+
+    div:nth-child(1) {
+      font-size: 2vw;
+    }
+
+    div:nth-child(2) {
+      font-size: 1.5vw;
+    }
+  }
+}
