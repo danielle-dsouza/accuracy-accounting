@@ -1,14 +1,2 @@
 @import "../../../scss/fonts";
-
-div {
-    margin-left: 4%;
-
-    h1 {
-        font-family: "Fjalla One";
-        font-size: 3vw;
-    }
-
-    p {
-        font-family: "Source Sans Pro";
-    }
-}
+@import "../../../scss/service";

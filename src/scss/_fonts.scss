@@ -24,3 +24,49 @@
 .highlight {
   color: $highlight-color;
 }
+
+.main-para {
+  margin: 4% 10%;
+
+  div:nth-child(1) {
+    font-family: "Open Sans Condensed";
+    font-weight: bold;
+    font-size: 5vw;
+    color: darken(rgb(28, 202, 202), 5%);
+  }
+
+  div:nth-child(3) {
+    margin-top: 2%;
+    font-family: "Source Sans Pro";
+    font-size: 1.1em;
+  }
+}
+
+hr {
+  border-width: 5px;
+  border-color: $highlight-color;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .main-para {
+    margin: 2% 8%;
+
+    div:nth-child(1) {
+      font-size: 2.5vw;
+    }
+
+    div:nth-child(3) {
+      font-size: 2vw;
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .main-para {
+    margin: 2% 8%;
+
+    div:nth-child(1) {
+      font-size: 2vw;
+    }
+  }
+}
