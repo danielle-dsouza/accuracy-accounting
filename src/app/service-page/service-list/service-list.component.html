@@ -2,7 +2,8 @@
 
 <div>
   <app-service-item
-    *ngFor="let serviceEl of services"
+    *ngFor="let serviceEl of services; let i = index"
     [service]="serviceEl"
+    [index]="i"
   ></app-service-item>
 </div>

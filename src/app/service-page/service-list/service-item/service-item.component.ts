@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Service } from '../../service.model';
-import { ServicesService } from '../../services.service';
 
 @Component({
   selector: 'app-service-item',
@@ -10,14 +9,8 @@ import { ServicesService } from '../../services.service';
 export class ServiceItemComponent implements OnInit {
 
   @Input() service: Service;
-
-  constructor(private servicesService: ServicesService) { }
+  @Input() index: number;
 
   ngOnInit() {
   }
-
-  onSelected() {
-    this.servicesService.serviceSelected.emit(this.service);
-  }
-
 }

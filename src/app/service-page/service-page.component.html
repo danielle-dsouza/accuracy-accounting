@@ -1,7 +1,7 @@
 <div id="service-page">
   <div class="title text-center">
     Services
-    <a href="#"><div class="btn-custom btn-custom-blue">Pricing</div></a>
+    <a [routerLink]="['/not-found']"><div class="btn-custom btn-custom-blue">Pricing</div></a>
   </div>
 
   <div class="serve-layout">
@@ -10,13 +10,7 @@
     </div>
 
     <div>
-      <app-service-detail
-        *ngIf="selectedService; else baseTest"
-        [service]="selectedService"
-      ></app-service-detail>
-      <ng-template #baseTest>
-        <app-service-info></app-service-info>
-      </ng-template>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

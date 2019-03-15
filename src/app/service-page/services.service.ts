@@ -15,4 +15,9 @@ export class ServicesService {
   getServices() {
       return this.services.slice();
   }
+
+  getService(index: number) {
+    return this.services.slice()[index];
+  }
+
 }
