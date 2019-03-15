@@ -2,19 +2,20 @@
 <nav class="navbar fixed-top navbar-expand-md">
     <div class="container-fluid">
         <div>
-            <a class="navbar-brand" href="index.html">Accuracy</a>
+            <a class="navbar-brand" [routerLink]="['/']">Accuracy</a>
         </div>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav"> <!--FIXME: Add collopase-->
+        <button class="navbar-toggler" type="button" (click)="toggleNav()">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="mainNav">
+        <div class="collapse navbar-collapse" [ngClass]="{ 'show': navOpen }">
             <ul class="nav navbar-nav mr-auto"> <!--TODO: Add dropdown-->
                 <li><a class="nav-link" [routerLink]="['/']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
                 <li><a class="nav-link" [routerLink]="['/services']" routerLinkActive="active-link">Services</a></li>
                 <li><a class="nav-link" [routerLink]="['/test']" routerLinkActive="active-link">Link</a></li>
                 <li><a class="nav-link" [routerLink]="['/about']" routerLinkActive="active-link">About</a></li>
+                <li><a class="nav-link" [routerLink]="['/faq']" routerLinkActive="active-link">FAQs</a></li>
                 <li><a class="nav-link" [routerLink]="['/contact']" routerLinkActive="active-link">Contact</a></li>       
             </ul>
 

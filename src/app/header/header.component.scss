@@ -32,25 +32,26 @@
 
       ul > li {
         font-family: "Source Sans Pro";
-        font-size: 1.2vw;
         letter-spacing: 1px;
         padding: 0 20px 0 10px;
 
         a {
           color: rgb(231, 227, 227);
-        }
 
-        a:hover {
-          padding-bottom: 0.3em;
-          color: white;
-          border-bottom: 3px solid $highlight-color;
-          text-decoration: none;
-          transition: 0.2s ease-in-out;
+          &:hover {
+            //TODO: Only trigger when element does not have active-link class
+            padding-bottom: 0.3em;
+            color: white;
+            border-bottom: 3px solid $highlight-color;
+            text-decoration: none;
+            transition: 0.2s ease-in-out;
+          }
         }
       }
 
       // Search Bar
       .searchbox {
+        //FIXME: Issue with search bar in drop-down menu.
         margin: 10px;
         height: auto;
         border-radius: 20px;
@@ -65,64 +66,59 @@
         }
       }
     }
-
-    @media screen and (max-width: 320px) {
-      // NTS: Mobile
-      .navbar-brand {
-        font-size: 3vw;
-
-        input[type="text"] {
-          font-size: 1.6vw;
-          margin: auto 0;
-        }
-
-        ul > li {
-          font-size: 1.6vw;
-        }
-      }
-
-      // .searchbox { //FIXME: Issue with search bar in drop-down menu.
-      //   width: 50px;
-
-      //   input {
-      //     width: 100%;
-      //   }
-      // }
-
-      .search-white {
-        input {
-          width: 95%;
-        }
-      }
-    }
-
-    @media screen and (min-width: 768px) {
-      //NTS: Tablet +
-      .navbar-brand {
-        font-size: 2vw;
-
-        input[type="text"] {
-          font-size: 1.3vw;
-          margin: auto 10px; //FIXME: space between search bar and 'Contact'
-        }
-
-        ul > li {
-          font-size: 1.3vw;
-        }
-      }
-
-      .search-white {
-        input {
-          width: 200px;
-        }
-      }
-    }
   }
 }
 
 .active-link {
   color: white;
   border-bottom: 3px solid $highlight-color;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar > div > div {
+    .navbar-brand {
+      font-size: 3vw;
+
+      input[type="text"] {
+        font-size: 2vw;
+        margin: auto 0;
+      }
+
+      ul > li {
+        font-size: 1.3vw;
+      }
+    }
+
+    .search-white {
+      input {
+        width: 200px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar > div > div{
+    .navbar-brand {
+      font-size: 2.5vw;
+      font-family: "Staatliches";
+
+      input[type="text"] {
+        font-size: 1.3vw;
+        margin: auto 10px; //FIXME: space between search bar and 'Contact'
+      }
+
+      ul > li {
+        font-size: 1.3vw;
+      }
+    }
+
+    .search-white {
+      input {
+        width: 200px;
+      }
+    }
+  }
 }
 
 // JS add/remove Class
