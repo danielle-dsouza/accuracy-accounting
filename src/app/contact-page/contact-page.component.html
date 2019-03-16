@@ -4,14 +4,88 @@
   </div>
 </div>
 
-<div>
-  <h4>Map</h4>
+<div class="c-info row">
+  <div class="col-md-6">
+    <div>- Find a Location -</div>
+    <div>
+      <form class="location-form">
+        <div>
+          <div>
+            <h5>Country</h5>
+          </div>
+          <div>
+            <select name="country" [(ngModel)]="typeRegion">
+              <option value="State">America</option>
+              <option value="Province">Canada</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h5>{{ typeRegion }}</h5>
+          </div>
+          <div>
+            <app-region-list
+              [region]="typeRegion"
+              (locationChange)="locChange($event)"
+            ></app-region-list>
+          </div>
+        </div>
+      </form>
+      <div class="loc text-center">Location: {{ newLocation }}</div>
+    </div>
+    <hr>
+  </div>
+
+  <div class="col-md-6">
+    <div>- Hours -</div>
+    <section>
+      <div>Monday - Friday<br />Saturday<br />Sunday</div>
+      <div>8:00 - 18:00<br />9:30 - 17:00<br />Closed</div>
+    </section>
+  </div>
 </div>
 
-<div>
-  <h4>Country</h4>
-  <h4>Province/State</h4>
-  <h4>Address</h4>
-  <h4>External Link to Google Maps</h4>
-  <h4>Form</h4>
+<div class="p-img parallax-img3">
+  <div class="caption"><span>Say Hello</span></div>
+</div>
+
+<div class="form-box">
+  <section class="form-box" id="email-form">
+    <form action="#" class="contact-form">
+      <div class="row">
+        <div class="col-md-6">
+          <input type="text" />
+          <label for="">First Name</label>
+        </div>
+        <div class="col-md-6">
+          <input type="text" />
+          <label for="">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <input type="email" />
+          <label for="">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <input type="text" />
+          <label for="">Subject</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <textarea rows="3" type="text"></textarea>
+          <label for="">Message</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <input type="submit" value="Send" class="square-button" />
+        </div>
+      </div>
+    </form>
+  </section>
 </div>

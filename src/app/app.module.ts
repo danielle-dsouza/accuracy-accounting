@@ -23,6 +23,7 @@ import { FaqPageComponent } from './faq-page/faq-page.component';
 import { FaqListComponent } from './faq-page/faq-list/faq-list.component';
 import { FaqItemComponent } from './faq-page/faq-list/faq-item/faq-item.component';
 import { PricePageComponent } from './price-page/price-page.component';
+import { RegionListComponent } from './contact-page/region-list/region-list.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { PricePageComponent } from './price-page/price-page.component';
     FaqPageComponent,
     FaqListComponent,
     FaqItemComponent,
-    PricePageComponent
+    PricePageComponent,
+    RegionListComponent
   ],
   imports: [
     BrowserModule,

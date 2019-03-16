@@ -1,0 +1,10 @@
+<select *ngIf="list" [(ngModel)]="i" (change)="changeAddress($event)">
+  <option value="0">British Columbia</option>
+  <option value="1">Ontario</option>
+  <option value="2">Quebec</option>
+</select>
+
+<select *ngIf="!list" [(ngModel)]="i" (change)="changeAddress($event)">
+  <option value="3">Florida</option>
+  <option value="4">New York</option>
+</select>
