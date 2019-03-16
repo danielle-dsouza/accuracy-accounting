@@ -7,3 +7,51 @@ div {
     background-image: url("../../assets/images/light-bulb.jpg");
   }
 }
+
+#mission {
+  margin: 4% 10%;
+
+  div:nth-child(1) {
+    font-family: "Fjalla One";
+    font-size: 5vw;
+    font-weight: bold;
+  }
+
+  div:nth-child(2) {
+    margin-top: 2%;
+    font-family: "Source Sans Pro";
+    font-size: 1.1em;
+  }
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  #mission {
+    margin: 2% 8%;
+
+    div:nth-child(1) {
+      font-size: 3vw;
+    }
+
+    div:nth-child(2) {
+      font-size: 2.5vw;
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #mission {
+    margin: 2% 8%;
+
+    div:nth-child(1) {
+      font-size: 2vw;
+    }
+
+    div:nth-child(2) {
+      font-size: 1.2vw;
+    }
+  }
+}
