@@ -6,3 +6,46 @@ div {
     background-image: url("../../assets/images/space-room.jpg");
   }
 }
+
+#price-cards {
+  margin: 4% 10%;
+
+  .p-title {
+    font-family: "Fjalla One";
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 3% 0;
+    font-size: 5vw;
+  }
+
+  .card {
+    margin-bottom: 2%;
+  }
+
+  small {
+    color: rgb(104, 101, 101);
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  #price-cards {
+    margin: 2% 8%;
+
+    .p-title {
+      padding: 1%;
+      font-size: 3vw;
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #price-cards {
+    margin: 2% 8%;
+
+    .p-title {
+      padding: 1%;
+      font-size: 2vw;
+    }
+  }
+}
