@@ -25,10 +25,6 @@
         color: white;
       }
 
-      input[type="text"] {
-        border: none;
-      }
-
       ul > li {
         font-family: "Source Sans Pro";
         letter-spacing: 1px;
@@ -47,23 +43,6 @@
           }
         }
       }
-
-      // Search Bar
-      .searchbox {
-        //FIXME: Issue with search bar in drop-down menu.
-        margin: 10px;
-        height: auto;
-        border-radius: 20px;
-        padding: 10px;
-
-        input {
-          color: black;
-          border: 0;
-          outline: 0;
-          background: none;
-          transition: 0.3s linear;
-        }
-      }
     }
   }
 }
@@ -78,19 +57,8 @@
     .navbar-brand {
       font-size: 3vw;
 
-      input[type="text"] {
-        font-size: 2vw;
-        margin: auto 0;
-      }
-
       ul > li {
         font-size: 1.3vw;
-      }
-    }
-
-    .search-white {
-      input {
-        width: 200px;
       }
     }
   }
@@ -102,41 +70,9 @@
       font-size: 2.5vw;
       font-family: "Staatliches";
 
-      input[type="text"] {
-        font-size: 1.3vw;
-        margin: auto 10px; //FIXME: space between search bar and 'Contact'
-      }
-
       ul > li {
         font-size: 1.3vw;
       }
     }
-
-    .search-white {
-      input {
-        width: 200px;
-      }
-    }
-  }
-}
-
-// JS add/remove Class
-.search-dark {
-  background-color: #363548;
-  input {
-    width: 0;
-  }
-  .fa-search-icon {
-    color: white;
-  }
-}
-
-.search-white {
-  background-color: white;
-  // input {
-  //   width: 200px;
-  // }
-  .fa-search-icon {
-    color: black;
   }
 }
