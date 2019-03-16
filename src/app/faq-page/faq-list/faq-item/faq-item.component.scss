@@ -4,7 +4,7 @@ div {
   padding: 0 0 2% 0;
 
   div {
-    font-family: "Prompt";
+    font-family: "Source Sans Pro";
     padding: 0 2%;
     span {
       font-family: "Fjalla One";
@@ -21,6 +21,7 @@ div {
 
   div:nth-child(2) {
     font-size: 3vw;
+    padding-top: 2%;
   }
 }
 
@@ -38,6 +39,24 @@ div {
 
     div:nth-child(2) {
       font-size: 2vw;
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  div {
+    margin: 0;
+
+    div {
+      padding: 0 2%;
+    }
+
+    div:nth-child(1) {
+      font-size: 2vw;
+    }
+
+    div:nth-child(2) {
+      font-size: 1.6vw;
     }
   }
 }
