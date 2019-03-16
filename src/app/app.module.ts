@@ -22,6 +22,7 @@ import { WildPageComponent } from './wild-page/wild-page.component';
 import { FaqPageComponent } from './faq-page/faq-page.component';
 import { FaqListComponent } from './faq-page/faq-list/faq-list.component';
 import { FaqItemComponent } from './faq-page/faq-list/faq-item/faq-item.component';
+import { PricePageComponent } from './price-page/price-page.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { FaqItemComponent } from './faq-page/faq-list/faq-item/faq-item.componen
     WildPageComponent,
     FaqPageComponent,
     FaqListComponent,
-    FaqItemComponent
+    FaqItemComponent,
+    PricePageComponent
   ],
   imports: [
     BrowserModule,

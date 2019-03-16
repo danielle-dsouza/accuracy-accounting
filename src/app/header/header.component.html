@@ -10,9 +10,10 @@
         </button>
 
         <div class="collapse navbar-collapse" [ngClass]="{ 'show': navOpen }">
-            <ul class="nav navbar-nav mr-auto"> <!--TODO: Add dropdown-->
+            <ul class="nav navbar-nav mr-auto">
                 <li><a class="nav-link" [routerLink]="['/']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
                 <li><a class="nav-link" [routerLink]="['/services']" routerLinkActive="active-link">Services</a></li>
+                <li><a class="nav-link" [routerLink]="['/pricing']" routerLinkActive="active-link">Pricing</a></li>
                 <li><a class="nav-link" [routerLink]="['/test']" routerLinkActive="active-link">Link</a></li>
                 <li><a class="nav-link" [routerLink]="['/about']" routerLinkActive="active-link">About</a></li>
                 <li><a class="nav-link" [routerLink]="['/faq']" routerLinkActive="active-link">FAQs</a></li>
