@@ -8,10 +8,30 @@ import { Person } from "../people.model";
 })
 export class PeopleComponent implements OnInit {
   people: Person[] = [
-    new Person("Name", "Job", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et dolor ut.", "../../assets/images/woman-orange.jpg"),
-    new Person("Name2", "Job2", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et dolor ut.", "../../assets/images/woman-orange.jpg"),
-    new Person("Name3", "Job3", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et dolor ut.", "../../assets/images/woman-orange.jpg"),
-    new Person("Name4", "Job4", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et dolor ut.", "../../assets/images/woman-orange.jpg")
+    new Person(
+      "Emma Williams",
+      "President",
+      "Mrs. Williams has been with Accuracy from the very beginning! Her extensive experience in senior management has helped turn Accuracy into a competitive company on an international level.",
+      "../../assets/images/woman-orange.jpg"
+    ),
+    new Person(
+      "Mark Gauthier",
+      "Chief Operating Officer",
+      "Mr. Gauthier brings significant value to decisions regarding global operations and supply chain matters.",
+      "../../assets/images/man-tattoo.jpg"
+    ),
+    new Person(
+      "Lucas Jackson",
+      "Chief Financial Officer",
+      "CFO since 2018, Mr. Jackson has served as a director for several Canadian companies and uses his many years of experience to lead Accuracy's financial department.",
+      "../../assets/images/man-red.jpg"
+    ),
+    new Person(
+      "Mia Avaco",
+      "Head of Public Relations",
+      "Ms. Avaco managed public and media relations. She provides strategic leadership regarding brand management, marketing and e-commerce.",
+      "../../assets/images/woman-laugh.jpg"
+    )
   ];
 
   constructor() {}
