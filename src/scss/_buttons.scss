@@ -20,27 +20,21 @@
 
 .btn-gray {
   cursor: pointer;
-  text-decoration: none; // remove if commented code below is added
-  font-family: "Fjalla One";
-  font-size: 1vw;
+  text-decoration: none; // remove if a { text-deconration: none; }
+  font-family: "Prompt";
   color: black;
-  margin: 5% 2%;
+  margin: 2% 4%;
+  font-size: 1vw;
 
   &.list-group-item {
     padding-bottom: 0; //FIXME: Extra padding-bottom?
-    border-width: 2px;
-    border-color: rgb(214, 214, 214);
+    border: solid 2px rgb(214, 214, 214);
   }
 
-  &:hover {
+  &:hover, &.active-service {
     background-color: rgb(216, 216, 216);
   }
 }
-
-// Add separately
-//   a {
-//       text-decoration: none;
-//   }
 
 @media only screen and (min-width: 641px) and (max-width: 1050px) {
   .title {
@@ -51,6 +45,11 @@
       margin: 4% 42% 0;
       font-size: 3vw;
     }
+  }
+
+  .btn-gray {
+    font-size: 1vw;
+    margin: 5% 2%;
   }
 }
 
@@ -63,5 +62,10 @@
       margin: 3% 42% 0 !important; //FIXME: Remove important
       font-size: 1.5vw;
     }
+  }
+
+  .btn-gray {
+    font-size: 1vw;
+    margin: 5% 2%;
   }
 }

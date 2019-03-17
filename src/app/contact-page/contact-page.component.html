@@ -34,7 +34,7 @@
       </form>
       <div class="loc text-center">Location: {{ newLocation }}</div>
     </div>
-    <hr>
+    <hr />
   </div>
 
   <div class="col-md-6">
@@ -52,38 +52,38 @@
 
 <div class="form-box">
   <section class="form-box" id="email-form">
-    <form action="#" class="contact-form">
+    <form class="contact-form" (ngSubmit)="onSubmit()">
       <div class="row">
-        <div class="col-md-6">
-          <input type="text" />
-          <label for="">First Name</label>
+        <div class="col-md-6" [formGroup]="contactForm">
+          <input type="text" name="First" formControlName="contactFormFirst" #word (blur)="smallText(word.value)"/>
+          <label [ngClass]="{'fontTop': iftask}">First Name</label>
         </div>
-        <div class="col-md-6">
-          <input type="text" />
-          <label for="">Last Name</label>
+        <div class="col-md-6" [formGroup]="contactForm" >
+          <input type="text" name="Last" formControlName="contactFormLast" #word2 (blur)="smallText2(word2.value)"/>
+          <label [ngClass]="{'fontTop': iftask2}">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12" [formGroup]="contactForm" >
+          <input type="email" name="Email" formControlName="contactFormEmail" #word3 (blur)="smallText3(word3.value)"/>
+          <label [ngClass]="{'fontTop': iftask3}">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12" [formGroup]="contactForm" >
+          <input type="text" name="Subject" formControlName="contactFormSubject" #word4 (blur)="smallText4(word4.value)"/>
+          <label [ngClass]="{'fontTop': iftask4}">Subject</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12" [formGroup]="contactForm" >
+          <textarea rows="3" type="text" name="Message" formControlName="contactFormMessage" #word5 (blur)="smallText5(word5.value)"></textarea>
+          <label [ngClass]="{'fontTop': iftask5}">Message</label>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-12">
-          <input type="email" />
-          <label for="">Email</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <input type="text" />
-          <label for="">Subject</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <textarea rows="3" type="text"></textarea>
-          <label for="">Message</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <input type="submit" value="Send" class="square-button" />
+          <button type="submit" class="square-button" [disabled]="disabledSubmitButton">Submit</button>
         </div>
       </div>
     </form>

@@ -88,7 +88,6 @@ div {
     margin: 0;
     font-weight: 200;
     line-height: 10px;
-    // color: #333;
     color: darken($highlight-color, 10%);
     font-size: 18px;
     left: 25px;
@@ -156,8 +155,8 @@ div {
 }
 
 .fontTop {
-  font-size: 12px !important;
-  top: 10px !important;
+    font-size: 12px !important;
+    top: 10px !important;
 }
 
 @media only screen and (min-width: 641px) and (max-width: 759px) {
