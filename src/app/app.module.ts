@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
@@ -24,6 +25,8 @@ import { FaqListComponent } from './faq-page/faq-list/faq-list.component';
 import { FaqItemComponent } from './faq-page/faq-list/faq-item/faq-item.component';
 import { PricePageComponent } from './price-page/price-page.component';
 import { RegionListComponent } from './contact-page/region-list/region-list.component';
+import { HttpModule } from '@angular/http';
+import { CalendarComponent } from './price-page/calendar/calendar.component';
 
 @NgModule({
   declarations: [
@@ -45,12 +48,16 @@ import { RegionListComponent } from './contact-page/region-list/region-list.comp
     FaqListComponent,
     FaqItemComponent,
     PricePageComponent,
-    RegionListComponent
+    RegionListComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
+    HttpModule,
     AppRoutingModule,
   ],
   providers: [

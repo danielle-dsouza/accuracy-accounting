@@ -1,0 +1,80 @@
+<div id="book-client">
+  <div class="cal">
+    <div class="main">
+      <div class="month">
+        <div class="cal-title">2019 {{ month }}</div>
+        <div class="cal-grid">
+          <div class="day-head">M</div>
+          <div class="day-head">T</div>
+          <div class="day-head">W</div>
+          <div class="day-head">T</div>
+          <div class="day-head">F</div>
+          <div class="day-head">S</div>
+          <div class="day-head">S</div>
+          <div class="day" id="1" (click)="selectedDay($event)">1</div>
+          <div class="day" id="2" (click)="selectedDay($event)">2</div>
+          <div class="day" id="3" (click)="selectedDay($event)">3</div>
+          <div class="day" id="4" (click)="selectedDay($event)">4</div>
+          <div class="day" id="5" (click)="selectedDay($event)">5</div>
+          <div class="day" id="6" (click)="selectedDay($event)">6</div>
+          <div class="day" id="7" (click)="selectedDay($event)">7</div>
+          <div class="day" id="8" (click)="selectedDay($event)">8</div>
+          <div class="day" id="9" (click)="selectedDay($event)">9</div>
+          <div class="day" id="10" (click)="selectedDay($event)">10</div>
+          <div class="day" id="11" (click)="selectedDay($event)">11</div>
+          <div class="day" id="12" (click)="selectedDay($event)">12</div>
+          <div class="day" id="13" (click)="selectedDay($event)">13</div>
+          <div class="day" id="14" (click)="selectedDay($event)">14</div>
+          <div class="day" id="15" (click)="selectedDay($event)">15</div>
+          <div class="day" id="16" (click)="selectedDay($event)">16</div>
+          <div class="day" id="17" (click)="selectedDay($event)">17</div>
+          <div class="day" id="18" (click)="selectedDay($event)">18</div>
+          <div class="day" id="19" (click)="selectedDay($event)">19</div>
+          <div class="day" id="20" (click)="selectedDay($event)">20</div>
+          <div class="day" id="21" (click)="selectedDay($event)">21</div>
+          <div class="day" id="22" (click)="selectedDay($event)">22</div>
+          <div class="day" id="23" (click)="selectedDay($event)">23</div>
+          <div class="day" id="24" (click)="selectedDay($event)">24</div>
+          <div class="day" id="25" (click)="selectedDay($event)">25</div>
+          <div class="day" id="26" (click)="selectedDay($event)">26</div>
+          <div class="day" id="27" (click)="selectedDay($event)">27</div>
+          <div class="day" id="28" (click)="selectedDay($event)">28</div>
+          <div class="day" id="29" (click)="selectedDay($event)">29</div>
+          <div class="day" id="30" (click)="selectedDay($event)">30</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cal-details">
+    <div id="date">
+      <p>Date: {{ month }} {{ day }}, {{ year }}</p>
+    </div>
+    <form>
+      <div>
+        <select>
+          <option value="">10:00</option>
+          <option value="">11:00</option>
+          <option value="">12:00</option>
+          <option value="">13:00</option>
+          <option value="">14:00</option>
+          <option value="">15:00</option
+          >"
+        </select>
+      </div>
+      <div>
+        <input type="text" name="Name" placeholder="Name" />
+      </div>
+      <div>
+        <input type="text" name="Phone" placeholder="Phone Number" />
+      </div>
+      <div>
+        <input type="email" name="Email" placeholder="Email" />
+      </div>
+      <div>
+        <button type="submit" class="square-button" [disabled]="disabledButton">
+          Confirm
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
