@@ -30,16 +30,19 @@ div {
           h5 {
             font-family: "Prompt";
             margin: 3% 0;
+            font-size: 4vw;
           }
           select {
             width: 100%;
             margin: 2% 0;
+            font-size: 4vw;
           }
         }
       }
 
       .loc {
         margin-top: 2%;
+        font-size: 4vw;
       }
     }
 
@@ -125,7 +128,6 @@ div {
     border: solid 2px darken(rgb(214, 214, 214), 10%);
     padding: 25px;
     margin-bottom: 20px;
-    // resize: none;
 
     &:focus {
       background-color: white;
@@ -155,8 +157,8 @@ div {
 }
 
 .fontTop {
-    font-size: 12px !important;
-    top: 10px !important;
+  font-size: 12px !important;
+  top: 10px !important;
 }
 
 @media only screen and (min-width: 641px) and (max-width: 759px) {
@@ -174,15 +176,23 @@ div {
           grid-gap: 5%;
 
           div {
+            h5 {
+              font-size: 3vw;
+            }
             select {
               margin: 2% 0;
+              font-size: 2.8vw;
             }
           }
+        }
+
+        .loc {
+          font-size: 3vw;
         }
       }
       section {
         grid-gap: 5%;
-  
+
         div {
           font-size: 3vw;
         }
@@ -191,13 +201,26 @@ div {
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 760px) and (max-width: 1024px) {
   .c-info {
     margin: 2% 8%;
     div {
+      div:nth-child(2) {
+        form > div > div {
+          h5 {
+            font-size: 2.5vw;
+          }
+          select {
+            font-size: 2vw;
+          }
+        }
+        .loc {
+          font-size: 2.5vw;
+        }
+      }
       section {
         grid-gap: 5%;
-  
+
         div {
           font-size: 2.2vw;
         }
@@ -221,15 +244,22 @@ div {
           grid-gap: 5%;
 
           div {
+            h5 {
+              font-size: 1.5vw;
+            }
             select {
               margin: 2% 0;
+              font-size: 1.5vw;
             }
           }
+        }
+        .loc {
+          font-size: 1.5vw;
         }
       }
       section {
         grid-gap: 5%;
-  
+
         div {
           font-size: 1.8vw;
         }
