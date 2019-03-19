@@ -45,6 +45,10 @@
             transition: 0.3s ease;
           }
         }
+
+        .day-no-click {
+          color: gray;
+        }
       }
     }
   }
@@ -84,6 +88,10 @@
       }
     }
   }
+}
+
+.day-current {
+  color: $highlight-color;
 }
 
 @media only screen and (min-width: 641px) and (max-width: 759px) {
