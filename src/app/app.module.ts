@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -59,6 +60,7 @@ import { CalendarComponent } from './price-page/calendar/calendar.component';
     HttpClientModule,
     HttpModule,
     AppRoutingModule,
+    NgbModule
   ],
   providers: [
     {provide: LocationStrategy, useClass: PathLocationStrategy}

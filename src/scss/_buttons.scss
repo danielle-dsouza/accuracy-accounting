@@ -2,7 +2,6 @@
 
 .btn-custom {
   cursor: pointer;
-  //FIXME: Button padding/margin
   font-family: "Source Sans Pro";
   font-weight: bold;
   font-size: 3vw;
@@ -27,7 +26,7 @@
   font-size: 1vw;
 
   &.list-group-item {
-    padding-bottom: 0; //FIXME: Extra padding-bottom?
+    padding-bottom: 0; 
     border: solid 2px rgb(214, 214, 214);
   }
 
