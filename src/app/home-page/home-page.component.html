@@ -47,24 +47,44 @@
 
 <div id="carousel-review">
   <ngb-carousel>
-    <!--*ngIf="quotes"-->
     <ng-template class="slide" ngbSlide>
       <div class="carousel-content">
-        <h2>I no longer have to stress over taxes. I have so much more time to focus on building new products!</h2>
+        <h2>
+          I no longer have to stress over taxes. I have so much more time to
+          focus on building new products!
+        </h2>
         <h3>Jerry Adams, Owner of <span>Sports Insider</span></h3>
       </div>
     </ng-template>
     <ng-template class="slide" ngbSlide>
       <div class="carousel-content">
-        <h2>Accuracy took me through my company's finances step-by-step. I discovered so much potential for improvement.</h2>
+        <h2>
+          Accuracy took me through my company's finances step-by-step. I
+          discovered so much potential for improvement.
+        </h2>
         <h3>Louis Verd, CEO of <span>Compass North</span></h3>
       </div>
     </ng-template>
     <ng-template class="slide" ngbSlide>
       <div class="carousel-content">
-        <h2>Joined Accuracy only a few months ago, learned where I could cut expenses, and already my profit has skyrocketed!</h2>
+        <h2>
+          Joined Accuracy only a few months ago, learned where I could cut
+          expenses, and already my profit has skyrocketed!
+        </h2>
         <h3>Hellen Riccardo, Owner of <span>Violet City</span></h3>
       </div>
     </ng-template>
   </ngb-carousel>
+</div>
+
+<div class="b-blue">
+  <hr />
+  <div>
+    <h3 class="text-center">
+      Schedule a
+      <a class="highlight" [routerLink]="['/pricing']">free consultation</a>
+      now!
+    </h3>
+  </div>
+  <hr />
 </div>

@@ -1,4 +1,5 @@
 @import "../../scss/globals";
+@import "../../scss/b-blue";
 
 #home-page {
   background-color: #23252c;
@@ -58,38 +59,11 @@
   }
 }
 
-.b-blue {
-  background-color: white;
-  margin: 4% 8%;
-  #quick-notes {
-    margin: 6% 0;
-    text-align: center;
-
-    .fa-icon {
-      color: $highlight-color;
-    }
-
-    h3 {
-      font-family: "Prompt";
-      color: black;
-      font-weight: bold;
-      font-size: 4vw;
-      padding: 2% 0;
-    }
-
-    p {
-      font-family: "Source Sans Pro";
-      font-size: 3vw;
-      padding: 0 10%;
-      color: rgb(114, 113, 113);
-    }
-  }
-}
-
 #carousel-review {
   .slide {
     height: auto;
     background-color: #23252c;
+    outline: none;
 
     .carousel-content {
       color: white;
@@ -131,6 +105,7 @@ hr {
   #home-page {
     background-image: url("../../assets/images/fog-skyscrappers.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   #mission-statement {
@@ -156,23 +131,6 @@ hr {
     }
   }
 
-  .b-blue {
-    #quick-notes {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-auto-flow: row;
-      grid-gap: auto;
-
-      h3 {
-        font-size: 1.8vw;
-      }
-
-      p {
-        font-size: 1.8vw;
-      }
-    }
-  }
-
   #carousel-review {
     .slide {
       .carousel-content {
@@ -194,6 +152,7 @@ hr {
   #home-page {
     background-image: url("../../assets/images/fog-skyscrappers.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   #mission-statement {
@@ -216,24 +175,6 @@ hr {
           font-size: 1.2vw;
           padding: 7px 0;
         }
-      }
-    }
-  }
-
-  .b-blue {
-    #quick-notes {
-      margin: 6% 0;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-auto-flow: row;
-      grid-gap: auto;
-
-      h3 {
-        font-size: 1.5vw;
-      }
-
-      p {
-        font-size: 1.3vw;
       }
     }
   }
