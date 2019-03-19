@@ -1,7 +1,10 @@
 <div id="home-page">
   <div id="mission-statement">
     <div>
-      <h1>Acheive <span class="highlight">success</span> in all its forms.</h1>
+      <h1>
+        Acheive <span class="highlight">financial success</span> in all its
+        forms.
+      </h1>
       <p>
         Accuracy Accounting Firm is dedicated to developing strong
         advisor-client relations and using the advanced software to help your
@@ -18,4 +21,50 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class="b-blue">
+  <hr />
+  <div id="quick-notes">
+    <div>
+      <i class="fa-icon fa fa-3x fa-check-circle"></i>
+      <h3>See progress fast.</h3>
+      <p>We use modern technology to ensure fast results.</p>
+    </div>
+    <div>
+      <i class="fa-icon fa fa-3x fa-bullseye"></i>
+      <h3>Elite Advisors</h3>
+      <p>Ask about their credentials - we're proud to boast!</p>
+    </div>
+    <div>
+      <i class="fa-icon fa fa-3x fa-heart"></i>
+      <h3>We've got your back!</h3>
+      <p>We will represent you when the CRA or the IRS come knocking.</p>
+    </div>
+  </div>
+  <hr />
+</div>
+
+<div id="carousel-review">
+  <ngb-carousel>
+    <!--*ngIf="quotes"-->
+    <ng-template class="slide" ngbSlide>
+      <div class="carousel-content">
+        <h2>I no longer have to stress over taxes. I have so much more time to focus on building new products!</h2>
+        <h3>Jerry Adams, Owner of <span>Sports Insider</span></h3>
+      </div>
+    </ng-template>
+    <ng-template class="slide" ngbSlide>
+      <div class="carousel-content">
+        <h2>Accuracy took me through my company's finances step-by-step. I discovered so much potential for improvement.</h2>
+        <h3>Louis Verd, CEO of <span>Compass North</span></h3>
+      </div>
+    </ng-template>
+    <ng-template class="slide" ngbSlide>
+      <div class="carousel-content">
+        <h2>Joined Accuracy only a few months ago, learned where I could cut expenses, and already my profit has skyrocketed!</h2>
+        <h3>Hellen Riccardo, Owner of <span>Violet City</span></h3>
+      </div>
+    </ng-template>
+  </ngb-carousel>
 </div>
