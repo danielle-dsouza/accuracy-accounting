@@ -1,6 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { HostListener, Inject } from "@angular/core";
-import { DOCUMENT } from "@angular/platform-browser";
+import { Title } from "@angular/platform-browser";
 
 @Component({
   selector: "app-header",
@@ -10,7 +9,11 @@ import { DOCUMENT } from "@angular/platform-browser";
 export class HeaderComponent implements OnInit {
   navOpen: boolean = false;
 
-  constructor() {}
+  public constructor(private titleService: Title) {}
+
+  public setTitle(newTitle: string) {
+    this.titleService.setTitle(newTitle);
+  }
 
   ngOnInit() {}
 
