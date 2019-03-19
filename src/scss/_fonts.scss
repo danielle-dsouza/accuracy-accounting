@@ -77,8 +77,12 @@ hr {
       font-size: 2vw;
     }
 
-    div:nth-child(3) > p {
-      padding: 0.6% 0;
+    div:nth-child(3) {
+      font-size: 1.5vw;
+      p {
+        margin: 0;
+        padding: 0.6% 0;
+      }
     }
   }
 }
