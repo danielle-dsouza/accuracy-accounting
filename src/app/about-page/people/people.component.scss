@@ -6,8 +6,8 @@
     #staff {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: auto;
         grid-auto-flow: row;
+        grid-gap: 2%;
     }
 }
 
