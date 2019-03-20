@@ -2,7 +2,7 @@
 @import "../../scss/b-blue";
 
 #home-page {
-  background-color: #23252c;
+  background-color: $bg-blue;
 }
 
 #mission-statement {
@@ -48,7 +48,7 @@
 
       &.btn-custom-white {
         color: white;
-        background-color: #23252c;
+        background-color: $bg-blue;
         border: 3px solid white;
       }
 
@@ -62,7 +62,7 @@
 #carousel-review {
   .slide {
     height: auto;
-    background-color: #23252c;
+    background-color: $bg-blue;
     outline: none;
 
     .carousel-content {
@@ -110,7 +110,7 @@ hr {
 
   #mission-statement {
     margin: 0 40% 0 15%;
-    background-color: #23252c;
+    background-color: $bg-blue;
     div {
       padding: 0 10%;
 
@@ -157,7 +157,7 @@ hr {
 
   #mission-statement {
     margin: 0 40% 0 15%;
-    background-color: #23252c;
+    background-color: $bg-blue;
     div {
       padding: 0 10%;
 

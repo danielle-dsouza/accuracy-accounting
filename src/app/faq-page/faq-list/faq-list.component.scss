@@ -1,1 +1,20 @@
 @import "../../../scss/fonts";
+
+h5 {
+  text-align: center;
+  font-size: 3vw;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  h5 {
+    text-align: right;
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  h5 {
+    text-align: right;
+    font-size: 1.5vw;
+  }
+}

@@ -8,7 +8,7 @@
     cursor: pointer;
     text-transform: uppercase;
     border-radius: 6px;
-    background-color: #232227;
+    background-color: $bg-blue;
 
     .month {
       padding: 5% 8%;
@@ -69,7 +69,7 @@
       select {
         border: solid 2px darken(rgb(214, 214, 214), 10%);
         width: 100%;
-        height: 40px;
+        height: auto;
       }
       select {
         font-size: 5vw;
@@ -79,7 +79,7 @@
       }
       button {
         padding: 2% 0;
-        height: 50px;
+        height: auto;
         border: solid 2px rgb(214, 214, 214);
         width: 100%;
         color: black;

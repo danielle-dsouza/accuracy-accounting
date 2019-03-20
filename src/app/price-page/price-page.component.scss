@@ -28,6 +28,11 @@ div {
   }
 }
 
+h5 {
+  text-align: center;
+  font-size: 3vw;
+}
+
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   #price-cards {
     margin: 2% 8%;
@@ -36,6 +41,10 @@ div {
       padding: 1%;
       font-size: 3vw;
     }
+  }
+  h5 {
+    text-align: right;
+    font-size: 2vw;
   }
 }
 
@@ -47,5 +56,9 @@ div {
       padding: 1%;
       font-size: 2vw;
     }
+  }
+  h5 {
+    text-align: right;
+    font-size: 1.5vw;
   }
 }

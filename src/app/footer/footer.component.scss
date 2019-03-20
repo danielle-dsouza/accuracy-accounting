@@ -1,23 +1,50 @@
 @import "../../scss/globals";
 
 .footer {
-    width: 100%;
-    height: auto;
-    background-color: $bg-dark;
-    padding: 2% 0;
-  
-    .fa-icon {
-      margin: 2% 2%;
-      color: white;
-  
-      &:hover {
-        color: rgb(195, 182, 182);
-      }
-    }
-  
-    p {
-      font-family: "Open Sans Condensed", sans-serif;
-      font-size: 15px;
-      color: white;
+  width: 100%;
+  height: auto;
+  background-color: $bg-dark;
+  padding: 4% 0;
+
+  .fa-icon {
+    margin: 2% 5%;
+    color: white;
+
+    &:hover {
+      color: rgb(195, 182, 182);
     }
   }
+
+  p {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 3vw;
+    margin-top: 4%;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .footer {
+    padding: 2% 0;
+
+    p {
+      font-size: 2vw;
+      margin-top: 2%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .footer {
+    padding: 2% 0;
+
+    .fa-icon {
+      margin: 0 5%;
+    }
+
+    p {
+      margin-top: 2%;
+      font-size: 1.2vw;
+    }
+  }
+}

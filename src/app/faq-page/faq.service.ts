@@ -15,6 +15,10 @@ export class FaqService {
     new Faq(
       "What services do you provide?",
       "The better question is what services do we not provide! Accuracy strives to create a strong financial foundation for your business. Our advisors are skilled in bookeeping, tax management, audits, annual reports and much more."
+    ),
+    new Faq(
+      "Do you provide services more/less frequently than every month?",
+      "Need a custom plan? No problem! We also offer independent services at intervals that suit your timeline. Schedule an appointment with us to learn more about pricing and different plan options."
     )
   ];
 

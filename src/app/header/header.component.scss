@@ -34,7 +34,6 @@
           color: rgb(231, 227, 227);
 
           &:hover {
-            //TODO: Only trigger when element does not have active-link class
             padding-bottom: 0.3em;
             color: white;
             border-bottom: 3px solid $highlight-color;
