@@ -1,0 +1,46 @@
+@import "../../scss/globals";
+@import "../../scss/fonts";
+@import "../../scss/buttons";
+@import "../../scss/b-blue";
+
+div {
+  .title {
+    background-image: url("../../assets/images/space-room.jpg");
+  }
+}
+
+#blog-page {
+  margin: 2% 8%;
+}
+
+// @media only screen and (max-width: 640px) {
+//     .blog-layout > div:nth-child(1) {
+//       padding-bottom: 2%;
+//     }
+//   }
+
+//   @media only screen and (min-width: 641px) {
+//     .serve-layout {
+//       display: grid;
+//       grid-template-columns: 1fr 4fr;
+//       grid-gap: 1vw;
+//       grid-auto-flow: row;
+//       padding: 3% 8%;
+//     }
+//   }
+
+//   @media only screen and (min-width: 641px) and (max-width: 1024px) {
+//     .b-blue > #quick-notes {
+//       grid-template-columns: 1fr 1fr;
+//       grid-template-rows: 1fr 1fr;
+//       grid-gap: 5%;
+//     }
+//   }
+
+//   @media only screen and (min-width: 1025px) {
+//     .b-blue > #quick-notes {
+//       grid-template-columns: 1fr 1fr;
+//       grid-template-rows: 1fr 1fr;
+//       grid-gap: 5%;
+//     }
+//   }

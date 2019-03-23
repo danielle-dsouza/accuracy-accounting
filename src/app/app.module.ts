@@ -28,6 +28,11 @@ import { PricePageComponent } from './price-page/price-page.component';
 import { RegionListComponent } from './contact-page/region-list/region-list.component';
 import { HttpModule } from '@angular/http';
 import { CalendarComponent } from './price-page/calendar/calendar.component';
+import { BlogPageComponent } from './blog-page/blog-page.component';
+import { BlogDetailComponent } from './blog-page/blog-detail/blog-detail.component';
+import { BlogInfoComponent } from './blog-page/blog-info/blog-info.component';
+import { BlogListComponent } from './blog-page/blog-list/blog-list.component';
+import { BlogItemComponent } from './blog-page/blog-list/blog-item/blog-item.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +55,12 @@ import { CalendarComponent } from './price-page/calendar/calendar.component';
     FaqItemComponent,
     PricePageComponent,
     RegionListComponent,
-    CalendarComponent
+    CalendarComponent,
+    BlogPageComponent,
+    BlogDetailComponent,
+    BlogInfoComponent,
+    BlogListComponent,
+    BlogItemComponent
   ],
   imports: [
     BrowserModule,

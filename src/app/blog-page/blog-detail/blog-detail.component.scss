@@ -1,0 +1,61 @@
+@import "../../../scss/globals";
+
+div {
+    img {
+        width: 100%;
+        height: 200px; //FIXME: Change static height
+        object-fit: cover;
+      }
+
+  h1 {
+    padding: 2% 0 0 0;
+    font-family: "Fjalla One";
+    font-size: 5vw;
+    font-weight: bold;
+    color: black;
+  }
+
+  p {
+    font-family: "Open Sans Condensed";
+    font-size: 2vw;
+    padding: 0;
+    margin: 0;
+    span {
+      font-weight: bold;
+    }
+  }
+
+  h6 {
+    font-family: "Source Sans Pro";
+    font-size: 3vw;
+    padding-top: 2%;
+
+    a {
+      color: $highlight-color;
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  div {
+    img {
+      height: 300px; //FIXME: Change static height
+    }
+
+    h1 {
+      padding: 2% 0 0 0;
+      font-size: 3vw;
+    }
+
+    p {
+      font-size: 1vw;
+      padding: 0;
+      margin: 0;
+    }
+
+    h6 {
+      font-size: 1.3vw;
+      padding-top: 2%;
+    }
+  }
+}

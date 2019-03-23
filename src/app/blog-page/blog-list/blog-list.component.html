@@ -1,0 +1,7 @@
+<div id="blog-layout">
+  <app-blog-item
+    *ngFor="let blogEl of blogs; let i = index"
+    [blog]="blogEl"
+    [index]="i"
+  ></app-blog-item>
+</div>

@@ -1,0 +1,63 @@
+@import "../../../../scss/globals";
+
+a {
+  text-decoration: none;
+}
+
+.art {
+  margin: 2% auto;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+
+  div:nth-child(1) {
+    img {
+      max-height: 100%;
+      object-fit: cover;  
+      width: 100%;
+    }
+  }
+
+  div:nth-child(2) {
+    background-color: $bg-dark;
+    color: white;
+    text-align: right;
+    height: auto;
+    p {
+      font-family: "Prompt";
+      font-size: 4vw;
+      padding: 2%;
+    }
+  }
+
+  &:hover {
+    div:nth-child(2) {
+      background-color: lighten($bg-dark, 10%);
+    }
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .art {
+    div:nth-child(2) {
+      text-align: right;
+      height: auto;
+      p {
+        font-size: 3vw;
+        padding: 2%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .art {
+    div:nth-child(2) {
+      text-align: right;
+      height: auto;
+      p {
+        font-size: 1.5vw;
+        padding: 2%;
+      }
+    }
+  }
+}
