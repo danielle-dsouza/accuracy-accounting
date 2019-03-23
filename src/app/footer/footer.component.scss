@@ -1,12 +1,16 @@
 @import "../../scss/globals";
 
+a {
+  text-decoration: none;
+}
+
 .footer {
   width: 100%;
   height: auto;
   background-color: $bg-dark;
   padding: 4% 0;
 
-  .fa-icon {
+  .fa-icon, a {
     margin: 2% 5%;
     color: white;
 
@@ -38,8 +42,8 @@
   .footer {
     padding: 2% 0;
 
-    .fa-icon {
-      margin: 0 5%;
+    .fa-icon, a {
+      margin: 0 3%;
     }
 
     p {

@@ -1,3 +1,5 @@
+@import "../../../../scss/globals";
+
 #person {
   padding: 4% 5% 0 5%;
   text-align: center;
@@ -38,7 +40,7 @@
   
     text-align: left;
   
-    div > img { //FIXME: Vertically align image
+    div > img {
       width: 100%;
       align-self: center;
       object-fit: contain;
@@ -61,7 +63,6 @@
 @media only screen and (min-width: 1025px) {
   #person {
     padding: 4% 5%;
-    // background-color: rgb(223, 223, 223);
     display: grid;
     grid-gap: 1%;
     grid-template-columns: 1fr 2fr;
