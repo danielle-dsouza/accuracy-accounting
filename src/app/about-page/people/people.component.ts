@@ -24,7 +24,7 @@ export class PeopleComponent implements OnInit {
       "Lanxin Jackson",
       "Chief Financial Officer",
       "CFO since 2018, Mr. Jackson has served as a director for several Canadian companies and uses his many years of experience to lead Accuracy's financial department.",
-      "../../assets/images/man-red.jpg"
+      "../../assets/images/man-earphone.jpg"
     ),
     new Person(
       "Mia Avaco",

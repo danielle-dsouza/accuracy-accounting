@@ -1,27 +1,18 @@
-# FirstProject
+## Introducing AAF
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
+Accuracy Accounting Firm is a new accounting firm specializing in bookkeeping and accounting services. With an international client list across North America, the company is dedicated to developing strong advisor-client relations and using advanced software to help your business maintain financial stability.
 
-## Development server
+## Development
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3. The single-page design allows for quick and smooth transitions between pages. Animations 
 
-## Code scaffolding
+## Notes
+This website was created as part of the 2019 FBLA Ontario competition. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Contributers
+This was an independent project by Danielle D'Souza.
 
-## Build
+### Acknowledgments
+Images on the site are credited to the incredible photographers on [Unsplash](https://unsplash.com/).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Thanks for the time!

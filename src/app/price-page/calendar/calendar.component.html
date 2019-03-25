@@ -45,36 +45,51 @@
       </div>
     </div>
   </div>
+
   <div class="cal-details">
     <div id="date">
       <p>Date: {{ month }} {{ day }}, {{ year }}</p>
     </div>
-    <form>
-      <div>
-        <select>
-          <option value="">10:00</option>
-          <option value="">11:00</option>
-          <option value="">12:00</option>
-          <option value="">13:00</option>
-          <option value="">14:00</option>
-          <option value="">15:00</option
-          >"
-        </select>
-      </div>
-      <div>
-        <input type="text" name="Name" placeholder="Name" />
-      </div>
-      <div>
-        <input type="text" name="Phone" placeholder="Phone Number" />
-      </div>
-      <div>
-        <input type="email" name="Email" placeholder="Email" />
-      </div>
-      <div>
-        <button type="submit" class="square-button" [disabled]="disabledButton">
-          Confirm
-        </button>
-      </div>
-    </form>
+
+    <section class="form-box">
+      <form #calform accept-chartset="UTF-8" action="https://usebasin.com/f/058cde6b0967" method="POST">
+        <div>
+          <select>
+            <option value="1000">10:00</option>
+            <option value="1100">11:00</option>
+            <option value="1200">12:00</option>
+            <option value="1300">13:00</option>
+            <option value="1400">14:00</option>
+            <option value="1500">15:00</option>
+          </select>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <input #word type="text" name="Name" (blur)="smallText(word.value)" />
+            <label [ngClass]="{'fontTop': iftask}">Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <input #word2 type="text" name="Phone" (blur)="smallText2(word2.value)" />
+            <label [ngClass]="{'fontTop': iftask2}">Phone Number</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <input #word3 type="email" name="Email" id="email" (blur)="smallText3(word3.value)" />
+            <label [ngClass]="{'fontTop': iftask3}">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <button type="submit" class="square-button" (click)="calform.submit()">
+              Confirm
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+
   </div>
 </div>

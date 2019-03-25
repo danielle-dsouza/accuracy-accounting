@@ -1,10 +1,4 @@
-import { Component, OnInit, HostListener } from "@angular/core";
-import { ConnectionService } from "./connection.service";
-import {
-  FormGroup,
-  FormBuilder,
-  Validators,
-} from "@angular/forms";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-contact-page",
@@ -13,34 +7,30 @@ import {
 })
 export class ContactPageComponent implements OnInit {
   public newLocation: string = "";
-  contactForm: FormGroup;
-  disabledSubmitButton: boolean = true;
+  // disabledSubmitButton: boolean = true;
   iftask:boolean = false;
   iftask2:boolean = false;
   iftask3:boolean = false;
   iftask4:boolean = false;
   iftask5:boolean = false;
 
-  @HostListener("input") oninput() {
-    if (this.contactForm.valid) {
-      this.disabledSubmitButton = false;
-    }
-  }
+  // @HostListener("input") oninput() {
+  //   if (this.contactForm.valid) {
+  //     this.disabledSubmitButton = false;
+  //   }
+  // }
 
-  constructor(
-    private fb: FormBuilder,
-    private connectionService: ConnectionService,
-  ) {
-    this.contactForm = fb.group({
-      contactFormFirst: ["", Validators.required],
-      contactFormLast: ["", Validators.required],
-      contactFormEmail: [
-        "",
-        Validators.compose([Validators.required, Validators.email])
-      ],
-      contactFormSubject: ["", Validators.required],
-      contactFormMessage: ["", Validators.required]
-    });
+  constructor() {
+    // this.contactForm = fb.group({
+    //   contactFormFirst: ["", Validators.required],
+    //   contactFormLast: ["", Validators.required],
+    //   contactFormEmail: [
+    //     "",
+    //     Validators.compose([Validators.required, Validators.email])
+    //   ],
+    //   contactFormSubject: ["", Validators.required],
+    //   contactFormMessage: ["", Validators.required]
+    // });
   }
 
   ngOnInit() {}
@@ -92,17 +82,5 @@ export class ContactPageComponent implements OnInit {
     } else {
       this.iftask5 = false;
     }
-  }
-
-  onSubmit() {
-    this.connectionService.sendMessage(this.contactForm.value).subscribe(
-      () => {
-        alert("Your message has been sent.");
-        this.contactForm.reset();
-        this.disabledSubmitButton = true;
-      },
-      error => {
-        console.log("Error", error);
-      });
   }
 }

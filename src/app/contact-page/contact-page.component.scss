@@ -1,6 +1,7 @@
 @import "../../scss/fonts";
 @import "../../scss/buttons";
 @import "../../scss/parallax";
+@import "../../scss/forms";
 
 div {
   .title {
@@ -65,100 +66,6 @@ div {
       }
     }
   }
-}
-
-.form-box {
-  background-color: white;
-  font-family: "Prompt";
-
-  * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-
-  section {
-    padding: 5% 20%;
-  }
-
-  label {
-    z-index: 1;
-    display: block;
-    position: absolute;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    margin: 0;
-    font-weight: 200;
-    line-height: 10px;
-    color: darken($highlight-color, 10%);
-    font-size: 18px;
-    left: 25px;
-    top: 25px;
-    transition: 0.3s ease-in-out;
-  }
-
-  input {
-    position: relative;
-    background-color: white;
-    border: solid 2px darken(rgb(214, 214, 214), 10%);
-    width: 100%;
-    height: 60px;
-    padding: 25px;
-    margin-bottom: 20px;
-
-    &:focus {
-      background-color: white;
-    }
-
-    &:focus + label {
-      font-size: 12px;
-      top: 10px;
-      left: 25px;
-    }
-  }
-
-  textarea {
-    height: auto;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background-color: white;
-    border: solid 2px darken(rgb(214, 214, 214), 10%);
-    padding: 25px;
-    margin-bottom: 20px;
-
-    &:focus {
-      background-color: white;
-    }
-
-    &:focus + label {
-      font-size: 12px;
-      top: 10px;
-      left: 25px;
-    }
-  }
-
-  .square-button {
-    padding: 2% 0;
-    height: auto;
-    border: solid 2px rgb(214, 214, 214);
-    width: 100%;
-    background-color: white;
-    color: black;
-    text-align: center;
-    font-size: 26px;
-    &:hover,
-    &:focus {
-      background-color: rgb(216, 216, 216);
-    }
-  }
-}
-
-.fontTop {
-  font-size: 12px !important;
-  top: 10px !important;
 }
 
 @media only screen and (min-width: 641px) and (max-width: 759px) {
@@ -264,13 +171,6 @@ div {
           font-size: 1.8vw;
         }
       }
-    }
-  }
-
-  .form-box {
-    section {
-      width: 80%;
-      margin: auto;
     }
   }
 }
