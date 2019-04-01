@@ -10,7 +10,7 @@
         </button>
 
         <div class="collapse navbar-collapse" [ngClass]="{ 'show': navOpen }">
-            <ul class="nav navbar-nav mr-auto">
+            <ul class="nav navbar-nav mr-auto" (click)="toggleNav()">
                 <li><a class="nav-link" [routerLink]="['/']" (click)="setTitle('Accuracy Accounting Firm')" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
                 <li><a class="nav-link" [routerLink]="['/services']" (click)="setTitle('Accuracy | Services')" routerLinkActive="active-link">Services</a></li>
                 <li><a class="nav-link" [routerLink]="['/pricing']" (click)="setTitle('Accuracy | Pricing')" routerLinkActive="active-link">Pricing</a></li>

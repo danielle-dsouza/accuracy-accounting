@@ -18,7 +18,7 @@
 .subtitle-black {
   font-family: "Fjalla One";
   color: black;
-  font-size: 2em;
+  font-size: 6vw;
 }
 
 .highlight {
@@ -67,6 +67,9 @@ hr {
       }
     }
   }
+  .subtitle-black {
+    font-size: 4vw;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
@@ -84,5 +87,8 @@ hr {
         padding: 0.6% 0;
       }
     }
+  }
+  .subtitle-black {
+    font-size: 2.5vw;
   }
 }

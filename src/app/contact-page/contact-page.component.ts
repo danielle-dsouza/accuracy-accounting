@@ -7,31 +7,14 @@ import { Component, OnInit } from "@angular/core";
 })
 export class ContactPageComponent implements OnInit {
   public newLocation: string = "";
-  // disabledSubmitButton: boolean = true;
+  public typeRegion: string;
   iftask:boolean = false;
   iftask2:boolean = false;
   iftask3:boolean = false;
   iftask4:boolean = false;
   iftask5:boolean = false;
 
-  // @HostListener("input") oninput() {
-  //   if (this.contactForm.valid) {
-  //     this.disabledSubmitButton = false;
-  //   }
-  // }
-
-  constructor() {
-    // this.contactForm = fb.group({
-    //   contactFormFirst: ["", Validators.required],
-    //   contactFormLast: ["", Validators.required],
-    //   contactFormEmail: [
-    //     "",
-    //     Validators.compose([Validators.required, Validators.email])
-    //   ],
-    //   contactFormSubject: ["", Validators.required],
-    //   contactFormMessage: ["", Validators.required]
-    // });
-  }
+  constructor() {}
 
   ngOnInit() {}
 

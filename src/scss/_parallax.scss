@@ -32,7 +32,20 @@
     background-color: rgba(0, 0, 0, 0.699);
     padding: 20px;
     font-family: "Fjalla One", sans-serif;
-    font-size: 20px;
+    // font-size: 20px;
+    font-size: 3vw;
     letter-spacing: 2px;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .caption > span {
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .caption > span {
+    font-size: 1.5vw;
   }
 }

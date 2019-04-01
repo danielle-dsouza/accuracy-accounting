@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calendar.component.scss']
 })
 export class CalendarComponent implements OnInit {
-  private month:String = "April";
-  private day:string = "1";
-  private year:string = "2019";
+  public month:String = "April";
+  public day:string = "1";
+  public year:string = "2019";
   iftask:boolean = false;
   iftask2:boolean = false;
   iftask3:boolean = false;
