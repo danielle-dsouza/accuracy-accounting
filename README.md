@@ -1,5 +1,3 @@
-Visit [Accuracy Accounting Firm](http://accuracyaccountingfirm.s3-website.ca-central-1.amazonaws.com/).
-
 ## Introducing AAF
 
 Accuracy Accounting Firm is a new accounting firm specializing in bookkeeping and accounting services. With an international client list across North America, the company is dedicated to developing strong advisor-client relations and using advanced software to help your business maintain financial stability.
